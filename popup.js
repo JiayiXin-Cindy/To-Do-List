@@ -1,3 +1,13 @@
+chrome.runtime.onMessage.addListener((msg, sender, response) =>{
+    if(msg.command == 'run-complete'){
+        document.querySelector('textarea').value = JSON.stringify(msg.data);
+        document.querySelector('textarea').style.display = 'block';
+        alert('commands have been run');
+    }
+});
+
+
+
 function createCommandObject(){
 
     var commandsArr = [];
@@ -48,4 +58,5 @@ chrome.tabs.query({currentWindow: true, active: true}, function (tabs){
     chrome.tabs.sendMessage(activeTab.id, {command: "runCommands", data: obj});
 
 });
+
 
