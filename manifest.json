@@ -2,25 +2,17 @@
     "manifest_version": 2,
     "name": "Demo Extension",
     "version": "0.1",
-    "content_scripts": [{
-        "matches": [
-            "<all_urls>"
-        ],
-        "js": ["content.js"]
-    }],
-    "background": {
-        "scripts": ["background.js"]
-    },
+    "description":"Scraper",
+    "permissions":["<all_urls"],
     "browser_action": {
-        "default_icon": {
-            "16": "images/pen16.png",
-            "48": "images/pen48.png",
-            "128": "images/pen128.png"
-        }
+        "default_title": "Scraper",
+        "default_popup": "popup.html"
     },
-    "icons": {
-        "16": "images/pen16.png",
-        "48": "images/pen48.png",
-        "128": "images/pen128.png"
-    }
+
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["contentScripts.js"],
+        "run_at": "document_end"
+    }]
+
 }
