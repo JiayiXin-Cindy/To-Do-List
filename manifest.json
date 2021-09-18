@@ -1,5 +1,4 @@
 {
-    "manifest_version": 2,
     "name": "Demo Extension",
     "version": "0.1",
     "description":"Scraper",
@@ -13,6 +12,6 @@
         "matches": ["<all_urls>"],
         "js": ["contentScripts.js"],
         "run_at": "document_end"
-    }]
-
+    }],
+    "manifest_version": 2
 }
