@@ -5,9 +5,10 @@ body {width:300px;
     overflow:auto;
     width:300px;
     }
-    select{width:55px;}
-    input{
-      margin-botton:30px;
+select{width:55px;}
+input{
       width:200px;
-    }
-
+}
+.action-buttons {
+  margin-top:10px;
+}
