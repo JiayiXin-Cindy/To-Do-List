@@ -33,13 +33,12 @@ function deleteMarker(){
 }
 function addnewMarker(){
     var newItem = `<div class="commands-list">
-    <option value="mark">Mark</option>
-    <option value="find">Find Marker</option>
-    <option value="delete">Delete Marker</option>
+    <option value="mark"> Mark</option>
+    <option value="find"> Find Marker</option>
+    <option value="delete"> Delete Marker</option>
     </div>`;
-    
     document.querySelector('.command-list').innerHTML+=newItem;
-};
+}
 
 document.querySelector('.mark').addEventListener('click', createMarker());
 
