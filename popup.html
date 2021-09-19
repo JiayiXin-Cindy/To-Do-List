@@ -1,37 +1,25 @@
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8">
-    <title>Simple Scraper</title>
-    <style>
-    body{
-      max-height:500px;
-      overflow:auto;
-      width:300px;
-    }
-    select{width:55px;}
-    input{
-      width:200px;
-    }
-    </style>
+    <title>Todo List</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+      />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>To Do List</h1>
+    <h1>My Todo's</h1>
 
-    <div class="commands-list">
-      <!-- Example -->
-      <div class="command-item">
-        <select>
-          <option value="school">School</option>
-          <option value="work">Work</option>
-          <option value="priority">Priority</option>
-          <option value="daily">Daily</option>
-        </select>
-        <input class="value-1" placeholder="text"/>
-      </div>
+    <button class="create-todo">New Item</button>
+    <div class="new-item">
+      <input type="text"/>
+      <button>Save</button>
     </div>
-    <div class="action-buttons">
-      <button class="new-item">Add Item</button>
-    </div>
+
+    <ul class="todo-items">
+    </ul>
+
     <script src="popup.js"></script>
   </body>
 </html>
