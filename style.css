@@ -1,31 +1,12 @@
 body {width:300px;
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    max-height:500px;
+    overflow:auto;
+    width:300px;
     }
-.todo-items,
-.todo-items li{
-    margin:0;
-    padding:0;
-    list-style: none;
-}
-.todo-items li{
-    padding:10px;
-    border-bottom: 2px solid grey;
-    display:flex;
-    justify-content: space-between;
-}
-.todo-items li:hover{
-    background:rgba(0,0,0,0.25);
-}
-.todo-items li.done .item{
-    text-decoration: line-through;
-}
-.todo-items div span{
-    margin:5px;
-    font-size:1em;
-    cursor: pointer;
-}
-.new-item{
-    display:none;
-}
+    select{width:55px;}
+    input{
+      width:200px;
+    }
 
