@@ -12,11 +12,6 @@
         "default_popup": "popup.html"
     },
 
-    "content_scripts": [{
-        "matches": ["<all_urls>"],
-        "js":["contentScripts.js"],
-        "run_at": "document_end"
-    }]
 }
 
 
